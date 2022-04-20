@@ -113,7 +113,7 @@ https://templatemo.com/tm-521-get-ready
   }
 
   .overlay {
-    background: linear-gradient(to top right, #d2b48c, #000000);
+    background: linear-gradient(to top right, #afeeee, #000000);
     opacity: 0.9;
     position: absolute;
     top: 0;
@@ -486,8 +486,11 @@ https://templatemo.com/tm-521-get-ready
       font-size: 12px;
     }
   }
-
+  
+    
 </style>
+
+
 </head>
 <body>
 
@@ -572,12 +575,17 @@ https://templatemo.com/tm-521-get-ready
      <!-- HOME -->
      <section id="home">
         <div class="overlay"></div>
-          <div class="container">
+          
+
+
+
+
+class="container">
                <div class="row">
 
                     <div class="col-md-12 col-sm-12">
                          <div class="home-info">
-                              <h1>We are getting ready <br>to launch new CREATIVE site!<br>So get yourself's Register. </h1>
+                              <h1>"We are getting ready <br>to disrupt Healthcare. Join US!" </h1>
                               <!-- You can change the date time in init.js file -->
                               <ul class="countdown">
                                    <li>
@@ -601,17 +609,18 @@ https://templatemo.com/tm-521-get-ready
 
                                 <form class="form" method="post" autocomple="off" name="google-sheet" action="#">
                                   <div class="form-group">
-                                  <input type="text" id="name" class="form-control" placeholder="Enter your Name" required="">
+                                  <input type="text" id="name" name="Name" class="form-control" placeholder="Enter your Name" required="">
                                    </div>
                                    <div class="form-group">
-                                  <input type="email" id="email" class="form-control" placeholder="Enter your email" required="">
+                                  <input type="email" id="email" name="Email" class="form-control" placeholder="Enter your email" required="">
                                   </div>
                                   <div class="form-group">
-                                  <input type="number" id="phone" class="form-control" placeholder="Enter your Phone no." required="">
+                                  <input type="number" id="phone" name="Phone" class="form-control" placeholder="Enter your Phone no." required="">
                                    </div>    
                                    <div class="form-group">
                                    <button type="submit" class="btn" value="submit">Submit</button>
                                    </div>
+                                   
                                 </form>
                               </div>
                          </div>
@@ -628,7 +637,7 @@ https://templatemo.com/tm-521-get-ready
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thank you for choosing us!"))
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
